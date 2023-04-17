@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ancla el div a la izquierda */
+}
+
+.navbar-left img {
+  width: 50px; /* ajusta el ancho de la imagen como sea necesario */
+  margin-right: 10px;
+}
+
+.navbar-left h3 {
+  color: #a259ff;
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.navbar-right li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* ancla el div a la derecha */
+}
+
+.navbar-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.navbar-right a:hover {
+  color: #1abcfb;
+}
+
+.navbar-right button.navbar-btn {
+  background-color: #0acf83;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;  transition: 0.2s;
+}
+
+.navbar-right button.navbar-btn:hover {
+  background-color: #1abcfb;
+}
+.navbar-right a {
+  margin-right: 20px;
+}
+
+.navbar-btn {
+  background-color: #A259FF;
+  color: #A259FF;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;}
+
+.navbar-btn:hover {
+  background-color: #f2f2f2;
+}
