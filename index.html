@@ -1,13 +1,148 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Insurance</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="./js/script.js"></script>
-  </head>
-  <body>
-    <div id="loading">
-        <img src="./images/icons8-load-from-cloud.gif" alt="GIF animado">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <title>Vita Insurance</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Soluciones</a>
+          <ul>
+            <li><a href="#">Autos</a></li>
+            <li><a href="#">Hogar</a></li>
+            <li><a href="#">Vida</a></li>
+            <li><a href="#">Empresas</a></li>
+            <li><a href="#">Mascotas</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Servicios</a>
+          <ul>
+            <li><a href="#">Retorno</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Recursos</a>
+          <ul>
+            <li><a href="#">Calculadora</a></li>
+            <li><a href="#">Guías</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <img src="logo.png" alt="Insurance">
+      <a href="#">Mi cuenta</a>
+      <button>Consulta Planes</button>
+    </nav>
+  </header>
+  <section>
+    <h2>Nuestros Socios</h2>
+    <!-- Aquí iría el contenido de la sección -->
+    <div class="slider">
+    <div class="slides">
+      <img src="imagen1.jpg" alt="Socio 1" width="320" height="106">
+      <img src="imagen2.jpg" alt="Socio 2" width="320" height="106">
+      <img src="imagen3.jpg" alt="Socio 3" width="320" height="106">
+      <img src="imagen4.jpg" alt="Socio 4" width="320" height="106">
+      <img src="imagen5.jpg" alt="Socio 5" width="320" height="106">
     </div>
-  </body>
+  </div>
+  </section>
+  <section>
+    <h2>Cómo funciona</h2>
+    <!-- Aquí iría el contenido de la sección -->
+    <div class="container">
+    <div class="content">
+      <img src="imagen70x70.jpg" alt="Icono de cómo funciona">
+      <h2>¿Cómo funciona?</h2>
+      <p>En Vita Insurance, creemos que su plan de seguro debe adaptarse a sus necesidades específicas. Es por eso que ofrecemos una amplia gama de opciones de cobertura para elegir. Estamos comprometidos a encontrar el mejor plan para usted y su familia, no importa cuáles sean sus circunstancias.</p>
+    </div>
+  </div>
+  </section>
+  <section>
+    <h2>Nuestros clientes</h2>
+    <!-- Aquí iría el contenido de la sección -->
+    <div class="container">
+    <div class="carousel">
+      <div class="testimonial">
+        <div class="social-media">Twitter</div>
+        <img src="foto1.jpg" alt="Testimonial 1" class="testimonial-img">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum, tortor in vestibulum elementum, lectus nisi pharetra odio, sit amet lobortis arcu nisi vitae lectus."</p>
+        <p class="testimonial-name">John Doe</p>
+      </div>
+      <div class="testimonial">
+        <div class="social-media">Facebook</div>
+        <img src="foto2.jpg" alt="Testimonial 2" class="testimonial-img">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum, tortor in vestibulum elementum, lectus nisi pharetra odio, sit amet lobortis arcu nisi vitae lectus."</p>
+        <p class="testimonial-name">Jane Smith</p>
+      </div>
+      <div class="testimonial">
+        <div class="social-media">Instagram</div>
+        <img src="foto3.jpg" alt="Testimonial 3" class="testimonial-img">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum, tortor in vestibulum elementum, lectus nisi pharetra odio, sit amet lobortis arcu nisi vitae lectus."</p>
+        <p class="testimonial-name">Mark Johnson</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer>
+    <!-- Aquí iría el contenido del footer -->
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="logo.png" alt="Insurance">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod libero id enim pulvinar, non congue dolor vestibulum.</p>
+      </div>
+      <div class="col-sm-2">
+        <h5>Soluciones</h5>
+        <ul>
+          <li><a href="#">Autos</a></li>
+          <li><a href="#">Hogar</a></li>
+          <li><a href="#">Vida</a></li>
+          <li><a href="#">Empresas</a></li>
+          <li><a href="#">Mascotas</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="#">Retorno</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Recursos</h5>
+        <ul>
+          <li><a href="#">Calculadora</a></li>
+          <li><a href="#">Guías</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="#">Formulario de contacto</a></li>
+          <li><a href="#">Chat en línea</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+  </footer>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.slides').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  });
+</script>
+</body>
 </html>
