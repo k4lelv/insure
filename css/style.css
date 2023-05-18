@@ -1,81 +1,100 @@
-.navbar {
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Titan One', cursive;
+}
+
+/* Estilos para la barra de navegación */
+.Nav {
+  background-color: #fff;
+  height: 50px;
+}
+
+.Nav-Padre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  padding: 10px 20px;
+  height: 100%;
+  padding: 0 20px;
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* ancla el div a la izquierda */
-}
-
-.navbar-left img {
-  width: 125px; /* ajusta el ancho de la imagen como sea necesario */
-  margin-right: 10px;
-}
-
-.navbar-left h3 {
-  color: #a259ff;
-  font-size: 24px;
-  margin: 0;
-}
-
-.navbar-right ul {
-  list-style: none;
+.Nav-Hijo ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-
-.navbar-right li {
-  margin: 0 10px;
-  display: flex;
   align-items: center;
-  justify-content: flex-end; /* ancla el div a la derecha */
 }
 
-.navbar-right a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.navbar-right a:hover {
-  color: #1abcfb;
-}
-
-.navbar-right button.navbar-btn {
-  background-color: #0acf83;
-  color: #ffffff;
-  border: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;  transition: 0.2s;
-}
-
-.navbar-right button.navbar-btn:hover {
-  background-color: #1abcfb;
-}
-.navbar-right a {
+.Nav-Hijo li {
   margin-right: 20px;
+  position: relative;
+}
+
+.Nav-Hijo a {
+  color: #001F3F;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18;
+}
+
+.Nav-Hijo ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #001F3F;
+  padding: 10px;
+}
+
+.Nav-Hijo ul li:hover > ul {
+  display: inherit;
+}
+
+.Nav-Hijo ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.Nav-Hijo ul ul li a {
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.Nav-Hijo ul ul li a:hover {
+  background-color: #555;
+}
+
+.Logo img {
+  height: 60px;
+  padding: 10em;
+}
+
+.MiCuenta {
+  margin-left: auto;
+}
+
+#Mi-Cuenta {
+  color: #001F3F;
+  font-weight: bold;
+}
+
+.BotonPlanes {
+  margin-left: 20px;
 }
 
 .navbar-btn {
-  background-color: #A259FF;
-  color: #A259FF;
-  border: 0;
+  background-color: #FF7262;
+  color: #fff;
+  border: none;
   padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;}
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .navbar-btn:hover {
-  background-color: #f2f2f2;
+  background-color: #001F3F;
 }
