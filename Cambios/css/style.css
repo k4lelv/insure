@@ -1,0 +1,36 @@
+.navbar-right button.navbar-btn {
+  background-color: #FF7262;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;  transition: 0.2s;
+}
+
+.navbar-right button.navbar-btn:hover {
+  background-color: #1abcfb;
+}
+.navbar-right a {
+  margin-right: 20px;
+}
+
+.navbar-btn {
+  background-color: #FF7262;
+  color: #FF7262;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;}
+
+.navbar-btn:hover {
+  background-color: #001F3F;
+}
+
+.Nav-Hijo a:link{
+  text-decoration: none;
+  color: #001F3F;
+  /*font-family: 'Poppins', sans-serif;*/
+}
