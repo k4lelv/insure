@@ -1,0 +1,27 @@
+.NuestrosSocios {
+    /* Estilos para la sección Nuestros Socios */
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    margin-right: 10px;
+}
+
+/* Configuración del carrusel */
+.slider:hover .slides {
+    transform: translateX(-100%);
+}
+
+.slider:hover .slides img:last-child {
+    margin-right: 0;
+}
