@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/insure-presentacion/css/main.css">
+    <title>Demo | Vita Insurance</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <li><a>Soluciones
+                        <div class="dropdown-menu open" id="dropdown-menu-soluciones">
+                            <ul>
+                                <li><a href="Autos">Autos</a></li>
+                                <li><a href="Hogar">Hogar </a></li>
+                                <li><a href="Vida">Vida</a></li>
+                                <li><a href="Empresas">Empresas</a></li>
+                                <li><a href="Mascotas">Mascotas</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li><a>Servicios
+                        <div class="dropdown-menu open" id="dropdown-menu-servicios">
+                            <ul>
+                                <li><a href="Retorno">Retorno</a></li>
+                            </ul>
+                        </div>
+                    </a></li>
+                <li><a>Recursos
+                        <div class="dropdown-menu open" id="dropdown-menu-recursos">
+                            <ul>
+                                <li><a href="Calculadora">Calculadora</a></li>
+                                <li><a href="Guía">Guía</a></li>
+                            </ul>
+                        </div>
+                    </a></li>
+                <li><a href="Contacto">Contacto</a></li>
+            </ul>
+            <div class="logo"><a href="#">INSURANCE</a></div>
+            <li><a href="Micuenta">Mi Cuenta</a></li>
+            <a href="ConsultaPlanes" class="action-btn">Consulta Planes :)</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div id="hero-top">
+                <div id="hero-title">
+                    <h1 id="hero-title-title">Insurance</h1>
+                    <p id="hero-title-phrase">"Protegiendo tu vida, cuidando tu futuro"</p>
+                    <div class="hero-title-autor">
+                        <a><img id="hero-title-autor-img" src="/insure-presentacion/images/user3.jpg"
+                                alt="CEO de Vita Insurance"></a>
+                        <p id="hero-title-autorname">@hacavita</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="our-partners">
+                <h2 id="our-partners-title">Nuestros Socios</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="/insure-presentacion/images/partners/assa-seguros-logo.png" alt="Assa seguros">
+                        <img src="/insure-presentacion/images/partners/banco-lafise-logo.png" alt="Banco Lafise seguros">
+                        <img src="/insure-presentacion/images/partners/iniser-logo.png" alt="Iniser">
+                        <img src="/insure-presentacion/images/partners/seguros-america-logo.png" alt="Seguros America">
+                        <img src="/insure-presentacion/images/partners/Allianz-logo.png" alt="Allianz">
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('dropdown-menu-soluciones')
+        const toggleBtnIcon = document.querySelector('toggle-btn i')
+        const dropDownMenu = document.querySelector('dropdown-menu')
+
+        toggleBtn.hover = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
