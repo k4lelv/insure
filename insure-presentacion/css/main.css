@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     /*font-family: 'Titan One', cursive;*/
+    box-sizing: border-box;
 }
 
 body {
@@ -381,31 +382,112 @@ header {
 
 /* FOOTER */
 .container{
-    max-width: 1170px;
-    background-color: rebeccapurple;
-    margin: auto;
-}
-.row{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 10px 15px;
 }
 .footer{
-    background-color: #FF7262;
-    box-sizing: border-box;
-    padding: 70px 0;
+    background-color: #FFFFFF;
+    padding: 50px 10px;
 }
 .footer-col{
-    width: 24%;
-    padding: 0 15px;
+    width: auto;
+    padding: 0px 15px;
 }
 
 .footer-col h4{
-    font-size: 14px;
     color: #001F3F;
-    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 1200;
+    font-size: 28px;
+    line-height: 140%;
     margin-bottom: 30px;
     font-weight: 500;
+    position: relative;
 }
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #FF7262;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    color: #001F3F;
+    display: block;
+}
+
+#hero-title-footer-autor{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 14px 20px 14px 16px;
+    gap: 8px;
+    width: 203px;
+    height: 64px;
+    margin-right: 300px;
+}
+#hero-title-footer-autor-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+#hero-title-autorname{
+    font-size: 32px;
+    color: #001F3F;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+#hero-title-footer-autor-button{
+    display: flex;
+    justify-content: left;
+    margin-left: 17%;
+}
+.action-footer-btn {
+    background-color: #FF7262;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action-footer-btn:hover {
+    scale: 1.05;
+    color: #FFFFFF;
+}
+
+.action-footer-btn:active {
+    scale: 0.95;
+}
+
+.footer-container-map img{
+    background-size: contain;
+    height: 280px;
+    width: 100%;
+}
+
+
 
 
 
