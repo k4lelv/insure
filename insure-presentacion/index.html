@@ -9,6 +9,8 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/insure-presentacion/css/main.css">
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="/insure-presentacion/css/swiper-bundle.min.css">
     <title>Demo | Vita Insurance</title>
 </head>
 
@@ -16,7 +18,8 @@
     <header>
         <div class="navbar">
             <ul class="links">
-                <li><a>Soluciones
+                <li><a>
+                        <p id="navbar-links-soluciones">Soluciones</p>
                         <div class="dropdown-menu open" id="dropdown-menu-soluciones">
                             <ul>
                                 <li><a href="Autos">Autos</a></li>
@@ -28,14 +31,16 @@
                         </div>
                     </a>
                 </li>
-                <li><a>Servicios
+                <li><a>
+                        <p id="navbar-links-servicios">Servicios</p>
                         <div class="dropdown-menu open" id="dropdown-menu-servicios">
                             <ul>
                                 <li><a href="Retorno">Retorno</a></li>
                             </ul>
                         </div>
                     </a></li>
-                <li><a>Recursos
+                <li><a>
+                        <p id="navbar-links-recursos">Recursos</p>
                         <div class="dropdown-menu open" id="dropdown-menu-recursos">
                             <ul>
                                 <li><a href="Calculadora">Calculadora</a></li>
@@ -57,13 +62,19 @@
     <main>
         <section>
             <div id="hero-top">
-                <div id="hero-title">
-                    <h1 id="hero-title-title">Insurance</h1>
-                    <p id="hero-title-phrase">"Protegiendo tu vida, cuidando tu futuro"</p>
-                    <div class="hero-title-autor">
-                        <a><img id="hero-title-autor-img" src="/insure-presentacion/images/user3.jpg"
-                                alt="CEO de Vita Insurance"></a>
-                        <p id="hero-title-autorname">@hacavita</p>
+                <div class="hero-title">
+                    <div id="hero-title-top">
+                        <h1 id="hero-title-title">Insurance</h1>
+                        <p id="hero-title-phrase">"Protegiendo tu vida, cuidando tu futuro"</p>
+                    </div>
+                    <div id="hero-title-autor">
+                        <div>
+                            <a><img id="hero-title-autor-img" src="/insure-presentacion/images/users/user3.jpg"
+                                    alt="CEO de Vita Insurance"></a>
+                        </div>
+                        <div>
+                            <p id="hero-title-autorname">@hacavita</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,29 +85,139 @@
                 <div class="slider">
                     <div class="slides">
                         <img src="/insure-presentacion/images/partners/assa-seguros-logo.png" alt="Assa seguros">
-                        <img src="/insure-presentacion/images/partners/banco-lafise-logo.png" alt="Banco Lafise seguros">
+                        <img src="/insure-presentacion/images/partners/banco-lafise-logo.png"
+                            alt="Banco Lafise seguros">
                         <img src="/insure-presentacion/images/partners/iniser-logo.png" alt="Iniser">
                         <img src="/insure-presentacion/images/partners/seguros-america-logo.png" alt="Seguros America">
                         <img src="/insure-presentacion/images/partners/Allianz-logo.png" alt="Allianz">
                     </div>
                 </div>
         </section>
+        <section>
+            <div class="how-works">
+                <div class="hero-howworks-content">
+                    <div class="hero-howworks-content-header">
+                        <div id="logo-howworks-img">
+                            <img src="/insure-presentacion/images/insurance-website-favicon-color.png"
+                                alt="¿Cómo funciona vita insurance?">
+                        </div>
+                        <div id="hero-howworks-title-title">
+                            <p>¿Cómo funciona?</p>
+                        </div>
+                    </div>
+                    <p id="hero-howworks-title-phrase">"En Vita Insurance, creemos que su plan de seguro debe adaptarse
+                        a sus necesidades específicas. Es por eso por lo que ofrecemos una amplia gama de opciones de
+                        cobertura para elegir. Estamos comprometidos a encontrar el mejor plan para usted y sus seres
+                        queridos, no importa cuáles sean sus circunstancias.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="our-clients">
+
+                <div class="our-clients-slider">
+                    <h2 id="our-clients-title">Nuestros Clientes</h2>
+                    <div class="our-clients-slides">
+                        <!-- CARD 1-->
+                        <div class="our-clients-slides-card">
+                            <div id="our-clients-slides-card-header">
+                                <i class="fa-brands fa-twitter fa-2xl"></i>
+                                <p id="our-clients-slides-card-header-social-name" style="padding-right: 15%;">by
+                                    Twitter</p>
+                                <img src="/insure-presentacion/images/users/user1.jpg" alt="Testimonio de Rafael"
+                                    style="height: 50px; width: 50px; border-radius: 50%;">
+                            </div>
+                            <div id="our-clients-slides-card-text">
+                                <p id="our-clients-slides-card-text">"¡La página web es increíble! Me ayudaron a
+                                    encontrar el seguro adecuado para mi negocio y fue muy fácil comprar la póliza en
+                                    línea. El personal fue muy servicial y respondió todas mis preguntas."
+                                </p>
+                                <p id="our-clients-slides-card-name">Carlos Sánchez</p>
+                            </div>
+                        </div>
+                        <!-- CARD 2-->
+                        <div class="our-clients-slides-card">
+                            <div id="our-clients-slides-card-header">
+                                <i class="fa-brands fa-twitter fa-2xl"></i>
+                                <p id="our-clients-slides-card-header-social-name" style="padding-right: 15%;">by
+                                    Twitter</p>
+                                <img src="/insure-presentacion/images/users/user2.jpg" alt="Testimonio de Rafael"
+                                    style="height: 50px; width: 50px; border-radius: 50%;">
+                            </div>
+                            <div id="our-clients-slides-card-text">
+                                <p id="our-clients-slides-card-text">"Estoy muy contento con el servicio que he recibido
+                                    de Vita Insurance. Me ayudaron a encontrar el seguro adecuado para mi hogar y estoy
+                                    muy satisfecho con los precios que ofrecen."
+                                </p>
+                                <p id="our-clients-slides-card-name">Juan Pérez</p>
+                            </div>
+                        </div>
+                        <!-- CARD 3-->
+                        <div class="our-clients-slides-card">
+                            <div id="our-clients-slides-card-header">
+                                <i class="fa-brands fa-facebook fa-2xl"></i>
+                                <p id="our-clients-slides-card-header-social-name" style="padding-right: 15%;">by
+                                    Facebook</p>
+                                <img src="/insure-presentacion/images/users/user5.jpg" alt="Testimonio de Rafael"
+                                    style="height: 50px; width: 50px; border-radius: 50%;">
+                            </div>
+                            <div id="our-clients-slides-card-text">
+                                <p id="our-clients-slides-card-text">"Encontré la página web de correduría de seguros
+                                    ideal para el seguro de mi mascota. No estaba seguro de qué cobertura necesitaba,
+                                    pero el personal fue muy útil en ayudarme. ¡Gracias!"
+                                </p>
+                                <p id="our-clients-slides-card-name">Franchesco Virgolini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Seguros</h4>
+                        <ul>
+                            <li><a href="#"></a>Autos</li>
+                            <li><a href="#"></a>Hogar</li>
+                            <li><a href="#"></a>Vida</li>
+                            <li><a href="#"></a>Empresas</li>
+                            <li><a href="#"></a>Mascotas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Vita Retorno</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#"></a>Calculadora</li>
+                        <li><a href="#"></a>Guías</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fa-solid fa-phone fa-xl"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
+                        <a href=""><i class="fa-solid fa-location-dot fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <script>
-        const toggleBtn = document.querySelector('dropdown-menu-soluciones')
-        const toggleBtnIcon = document.querySelector('toggle-btn i')
-        const dropDownMenu = document.querySelector('dropdown-menu')
-
-        toggleBtn.hover = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
+    <script src="/insure-presentacion/js/main.js"></script>
 </body>
+<script src="/insure-presentacion/js/swiper-bundle.min.js"></script>
 
 </html>

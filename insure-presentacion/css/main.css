@@ -47,14 +47,18 @@ header {
 .navbar .logo a {
     color: #001F3F;
     font-size: 32px;
+    font-weight: 900;
     cursor: pointer;
     font-weight: bold;
-    font-family: 'Titan One', cursive;
+    font-family: 'Titan One', sans-serif;
 }
 
 .navbar .links {
     display: flex;
     gap: 2.5rem;
+}
+#navbar-links-soluciones:hover{
+    cursor: pointer;
 }
 
 .navbar .toggle-btn {
@@ -97,6 +101,7 @@ header {
     border-radius: 15px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
 }
 
 .dropdown-menu.open {
@@ -135,11 +140,11 @@ header {
     left: 0px;
     top: 0px;
 }
-#hero-title {
+.hero-title {
     height: calc(100vh - 60vh);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     color: #001F3F;
@@ -151,6 +156,11 @@ header {
     position: absolute;
     left: 77px;
     top: 535px;
+}
+#hero-title-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #hero-title-title{
     position: absolute;
@@ -185,16 +195,17 @@ header {
 #hero-title-autor{
     display: flex;
     align-items: center;
+    flex-direction: row;
     padding: 14px 20px 14px 16px;
     gap: 14px;
-    position: absolute;
+    position: relative;
     width: 203px;
     height: 64px;
-
 }
+
 #hero-title-autor-img{
-    height: 24px;
-    width: 24px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 #hero-title-autor p {
@@ -205,7 +216,7 @@ header {
 /* Our Partners */
 .our-partners{
     width: 100%;
-    height: 500px;
+    height: 300px;
     background: #FFFFFF;
 }
 #our-partners-title{
@@ -248,6 +259,154 @@ header {
     margin-right: 0;
   }
   
+/* How Works */
+.how-works{
+    width: 100%;
+    height: 600px;
+    background-image: url(/insure-presentacion/images/escena1-mirror.jpg);
+    background-size: cover;
+}
+
+.hero-howworks-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #001F3F;    
+    background: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(144px);
+    border-radius: 15px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 40px;
+    top: 200px;
+    padding: 10px 80px 20px 80px;
+}
+#hero-howworks-content-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+}
+#logo-howworks-img img{
+    width: 70px;
+    height: 70px;
+}
+#hero-howworks-title-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+/* Our Clients*/
+.our-clients{
+    width: 100%;
+    height: 500px;
+    background-image: url(/insure-presentacion/images/escena1-mirror\ -\ 180deg.jpg);
+    background-size: cover;   
+}
+#our-clients-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 140.62%;
+
+    text-align: center;
+    color: #001F3F;
+    padding-top: 3rem;
+}
+.our-clients-slider{
+    position: relative;
+    background: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100%;
+}
+.our-clients-slides{
+    position: relative;
+    display: flex;
+    padding: 30px 40px 30px 40px;
+}
+
+.our-clients-slides-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #001F3F;    
+    background: rgba(240, 240, 240, 0.3);
+    backdrop-filter: blur(144px);
+    border-radius: 15px;
+    width: 450px;
+    height: 250px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#our-clients-slides-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+}
+#our-clients-slides-card-header-social-name{
+    font-size: 14px;
+}
+
+#our-clients-slides-card-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#our-clients-slides-card-text{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#our-clients-slides-card-name{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.container{
+    max-width: 1170px;
+    background-color: rebeccapurple;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #FF7262;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 24%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 14px;
+    color: #001F3F;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
 
 
 

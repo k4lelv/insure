@@ -1,12 +1,26 @@
-const toggleBtn = document.querySelector('toggle-btn')
-const toggleBtnIcon = document.querySelector('toggle-btn i')
-const dropDownMenu = document.querySelector('dropdown-menu')
-
-toggleBtn.onclick = function(){
-    dropDownMenu.classList.toggle('open')
-    const isOpen = dropDownMenu.classList.contains('open')
-
-    toggleBtnIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
-}
+var swiper = new Swiper(".our-clients-slider", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
