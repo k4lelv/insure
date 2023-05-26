@@ -486,7 +486,15 @@ header {
     height: 280px;
     width: 100%;
 }
-
+.social-links{
+    display: flex;
+    flex-direction: column;
+}
+.social-links a{
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
 
 
 
